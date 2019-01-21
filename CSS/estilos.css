@@ -1,0 +1,293 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Dancing";
+  src: url(DancingScript-Regular.ttf);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  height: 100%;
+}
+
+#titulo {
+  font-family: "Dancing", cursive;
+  text-shadow: 1px 1px 2px white, 0 0 30px #02010a;
+  margin-left: 10px;
+  margin-right: 925px; /*Espacio con las palabras de la derecha*/
+  padding: 23px 0px;
+  font-size: 25px;
+}
+
+nav ul li {
+  float: left;
+  padding: 30px 0px;
+  margin: 0px 25px;
+  font-family: "Dancing", cursive;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px white, 0 0 30px #02010a;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+#contenido {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+}
+
+.contenedor > div {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.contenedor2 {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: #d5c75f;
+  margin: auto;
+}
+
+#imagen2,
+#imagen3 {
+  width: 45%;
+  float: left;
+  margin: 2%;
+}
+
+#imagenCentral img {
+  /*Me centra la imagen*/
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+#imagenCentral {
+  background-color: #82c3a6;
+  margin: auto;
+}
+
+#imagen2 img {
+  display: block;
+  width: 80%;
+  float: left;
+  border: solid black 1px;
+  transition-property: rotate;
+  transition-duration: 2s;
+  box-shadow: 2px 2px 5px #82c3a6;
+  margin-bottom: 15px;
+}
+
+#imagen2 img:hover {
+  transform: rotate(10deg);
+  border: 2px black solid;
+}
+
+#imagen3 img {
+  display: block;
+  width: 102%;
+  margin-left: 500px;
+  float: right;
+  border: solid black 1px;
+  transition: translate 1s;
+}
+
+#imagen3 img:hover {
+  transform: translate(20px, -5px);
+  box-shadow: 2px 2px 5px #82c3a6;
+}
+
+.paisaje {
+  margin-right: 500px;
+}
+
+.retrato {
+  margin-top: 282px;
+}
+
+footer {
+  font-size: 0.8em;
+  padding-top: 1vw;
+  background-color: #c6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  height: 150%;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+}
+
+.info {
+  margin-left: 25px;
+}
+
+.contacto,
+.nombre,
+.correo,
+.tel {
+  font-family: "Dancing", cursive;
+  font-weight: bold;
+}
+
+.contacto {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.nombre,
+.correo,
+.tel {
+  font-size: 25px; /*Tamaño de la letra*/
+  margin-bottom: 15px; /*Dar espacios por palabra*/
+}
+
+.terminos {
+  margin-left: 40px;
+}
+
+.term {
+  font-family: "Dancing", cursive;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.textoTermini {
+  font-family: "Dancing", cursive;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.redes {
+  margin-left: 40px;
+}
+
+.social {
+  font-family: "Dancing", cursive;
+  font-size: 40px;
+  margin-bottom: 4px;
+}
+
+.face,
+.tw,
+.insta {
+  font-family: "Dancing", cursive;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.insta {
+  margin-bottom: 20px;
+}
+
+.derechos {
+  margin-left: 125px;
+}
+
+.der {
+  font-family: "Dancing", cursive;
+  font-size: 40px;
+  margin-bottom: 4px;
+}
+
+.copy {
+  font-family: "Dancing", cursive;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+@media (max-width: 480px) {
+  header {
+    background-color: #5b7989;
+    border-radius: 10px 10px 0px 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #titulo {
+    font-family: "Dancing", cursive;
+    text-shadow: 1px 1px 2px white, 0 0 30px #02010a;
+    margin: 0 auto;
+    font-size: 30px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav ul li {
+    margin: 0px 45px;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    height: 800px;
+  }
+
+  .contacto {
+    margin-top: 15px;
+  }
+
+  .terminos {
+    margin-left: 20px;
+    margin-top: 60px;
+  }
+
+  .redes {
+    margin-left: 20px;
+    white-space: nowrap;
+    margin-top: 60px;
+  }
+
+  .derechos {
+    margin-left: 20px;
+    margin-top: 60px;
+  }
+
+  #imagenCentral img {
+    /*Me centra la imagen*/
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  #imagen2,
+  #imagen3 {
+    width: 97%;
+  }
+
+  .contenedor2 {
+    width: 96%;
+  }
+}
